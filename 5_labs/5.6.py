@@ -7,7 +7,7 @@ import math as m
 
 def divs(n) -> []:
     output = [1]
-    for div in range(2, int(m.sqrt(n))):
+    for div in range(2, n // 2 + 1):
         if n % div == 0:
             output.append(div)
 
