@@ -4,12 +4,14 @@
 
 def task1():
     N = int(input("кол-во элементов массива: "))
-    max, arr = 0, []
+    arr = []
     for i in range(N):
         value = int(input(f"{i + 1} элемент массива: "))
         arr.append(value)
 
-        if(value > max):
+    max = arr[0]
+    for value in arr:
+        if (value > max):
             max = value
 
     print("максимальный элемент:", max)
@@ -35,5 +37,3 @@ def task2():
 
     task2_alg(arr)
     print(arr)
-
-task2()
