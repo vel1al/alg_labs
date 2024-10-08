@@ -36,4 +36,4 @@ def task2():
     A = B
     B = C
 
-    print(A,B)
+    print(A, B)

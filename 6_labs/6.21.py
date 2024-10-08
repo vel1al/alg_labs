@@ -16,7 +16,6 @@ def task1():
 
     print(f"искомая сумма: {target_sum}, искоммое произведение: {target_prod}")
 
-
 def task2():
     N = int(input("кол-во элементов массива: "))
     arr = []

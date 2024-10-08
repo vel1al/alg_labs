@@ -11,13 +11,12 @@ def task1():
         value = int(input(f"{i + 1} элемент массива: "))
         D.append(value)
 
-    target_sum, bParity = 0, True
-    for value in D:
-        if(not bParity):
-            target_sum += value
-        bParity = not bParity
+    target_sum = 0
+    for i in range(N):
+        if(i % 2 == 1):
+            target_sum += D[i]
 
-    print("\nискомая сумма:", target_sum)
+    print(D, target_sum)
 
 def task2():
     arr = []
