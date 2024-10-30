@@ -8,13 +8,13 @@
 import math as m
 
 def b_is_palidrom(word) -> bool:
-    return word == word[-1::]
+    return word == word[::-1]
 
 def b_is_prime(n) -> bool:
     if(abs(n) <= 2):
         return True
     else:
-        for div in range(0, int(m.sqrt(abs(n)))):
+        for div in range(2, int(m.sqrt(abs(n)))):
             if n % div == 0:
                 return False
 
@@ -22,9 +22,11 @@ def b_is_prime(n) -> bool:
 def task1():
     n = int(input("число n: "))
     for dig in range(1, n + 1):
-        if(b_is_palidrom(str(bin(dig)))[2::]):
+        if(b_is_palidrom(str(bin(dig))[2::])):
             if(b_is_prime(dig)):
                 print(dig)
+
+task1()
 
 def dist_3d_sqr(x1, y1, z1, x2, y2, z2) -> float:
     return (x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2
