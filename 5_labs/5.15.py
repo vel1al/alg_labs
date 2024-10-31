@@ -26,8 +26,6 @@ def task1():
             if(b_is_prime(dig)):
                 print(dig)
 
-task1()
-
 def dist_3d_sqr(x1, y1, z1, x2, y2, z2) -> float:
     return (x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2
 def task2():
@@ -59,3 +57,5 @@ def task2():
     for i in range(0, len(dists)):
         if dists[i] == min_dist:
             print(f"{points_pairs[i]}: {min_dist}")
+
+task2()

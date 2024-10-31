@@ -43,7 +43,7 @@ def task2():
 
     arr2 = []
     for value in arr:
-        if(value % 2 == 1 and value < 10):
+        if(value % 2 == 1):
             arr2.append(value)
 
     if(len(arr2) > 0):
